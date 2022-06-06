@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Home">
+
+    <fragment
+        android:id="@+id/wifi"
+        android:name="com.example.nivelacionu2.wifi"
+        android:label="fragment_wifi"
+        tools:layout="@layout/fragment_wifi" />
+    <fragment
+        android:id="@+id/bluet"
+        android:name="com.example.nivelacionu2.bluet"
+        android:label="fragment_bluet"
+        tools:layout="@layout/fragment_bluet" />
+    <fragment
+        android:id="@+id/brillo"
+        android:name="com.example.nivelacionu2.brillo"
+        android:label="fragment_brillo"
+        tools:layout="@layout/fragment_brillo" />
+    <fragment
+        android:id="@+id/linterna"
+        android:name="com.example.nivelacionu2.linterna"
+        android:label="fragment_linterna"
+        tools:layout="@layout/fragment_linterna" />
+    <fragment
+        android:id="@+id/avion"
+        android:name="com.example.nivelacionu2.avion"
+        android:label="fragment_avion"
+        tools:layout="@layout/fragment_avion" />
+    <fragment
+        android:id="@+id/timbre"
+        android:name="com.example.nivelacionu2.timbre"
+        android:label="fragment_timbre"
+        tools:layout="@layout/fragment_timbre" />
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.example.nivelacionu2.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_avion"
+            app:destination="@id/avion" />
+        <action
+            android:id="@+id/action_home2_to_timbre"
+            app:destination="@id/timbre" />
+        <action
+            android:id="@+id/action_home2_to_bluet"
+            app:destination="@id/bluet" />
+        <action
+            android:id="@+id/action_home2_to_linterna"
+            app:destination="@id/linterna" />
+        <action
+            android:id="@+id/action_home2_to_wifi"
+            app:destination="@id/wifi" />
+        <action
+            android:id="@+id/action_home2_to_brillo"
+            app:destination="@id/brillo" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInicio"
+        android:name="com.example.nivelacionu2.FragmentInicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_fragmentInicio_to_avion"
+            app:destination="@id/avion" />
+    </fragment>
+</navigation>
