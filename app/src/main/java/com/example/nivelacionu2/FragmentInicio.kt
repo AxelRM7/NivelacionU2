@@ -13,7 +13,6 @@ class FragmentInicio : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val direccion=FragmentInicio
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_inicio, container, false)
     }
